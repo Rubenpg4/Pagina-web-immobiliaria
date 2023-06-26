@@ -1,0 +1,204 @@
+
+/*Fuentes de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    --color-principal:#47525E;
+    --color-princ-oscuro:#374049;
+    --blanco:white;
+    --gris-claro:#ddd;
+
+  --color-principal:var(--color-principal);
+  --color-secundario:white;
+  --background:var(--gris-claro);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    display: flex;
+    /*background-color: green;*/
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    padding: 50px 5%;
+    margin: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER TODO CLASE (NAVBAR)*/
+
+.navbar{ padding-top: 6vh;}
+
+/* HEADER PARTE DEL LOGO UJA*/
+
+.nav-logo img{ width: auto;max-height: 5rem;max-zoom: 15%; height: 4rem;  transition: all 0.3s;}
+.nav-logo img:hover{ transform: scale(1.1); transition: all 0.3s;}
+.nav-logo{ cursor: pointer;}
+
+/*HEADER PARTE DE LOS ENLACES (NAV-LINKS) */
+
+.nav-links{ list-style: none; color: white; display: flow-root;}
+.nav-links li{ display: inline-block;/*espaciado*/ padding: 0 2.2rem; transition: all 0.3s;}
+.nav-links a{color:var(--color-secundario); text-decoration: none;}
+.nav-links li:hover{transform: scale(1.1); }
+
+/* BOTÓN (nav-btn-reg) */
+
+.btn { color:var(--color-principal);padding: 0.6rem 2.2rem;  background: var(--color-secundario); border: 0; border-radius: 5px;text-decoration: none;transition: all 0.3s; justify-content: center; align-items: center;}
+.btn-nav{ font-size: 1em; margin: 0.2em; display: flex; align-items: center; justify-content: center; padding: 1rem 2rem;}
+.btn-nav:hover{box-shadow: 0px 0px 20px; }
+
+.div-btn-reg{
+  /*background-color: aqua;*/
+  display: inline-flex;  padding: 0.5rem; justify-content: space-between;
+}
+.div-btn-switch.active  .div-btn-icon{
+  background-color: var(--color-principal);
+  left: calc(100% - 1.7rem - 0.3rem);
+  color: var(--color-secundario);
+}
+
+.div-btn-switch.active {
+  background-color: var(--color-princ-oscuro);
+}
+
+
+.div-btn-switch{
+  position: relative;
+  height: 2.2rem;
+  width: 4rem;
+  min-width: 4rem;
+  border-radius: 4rem;
+  background: var(--color-secundario);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin: 1rem;
+}
+
+.div-btn-icon{
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  transform: translateY(-50%);
+  height: 1.7rem;
+  width: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+  font-size: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(#000000,0.1);
+  transition: all 0.4s ease;
+}
+
+
+
+/* Opacidad aplicada a la imagen de fondo*/
+
+
+.opacidad{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.58;
+    z-index: -1;
+}
+
+
+
+/* Cuerpo principal  */
+body {
+    background-image: url(https://marvel-live.freetls.fastly.net/canvas/2023/2/00c0929d5a5540afa73460c5e791aeb6?quality=95&fake=.png);
+    margin: 0;
+    padding: 0;
+    min-height: 115vh;
+    /*min-width: 100vh;
+    max-width: fit-content;
+    max-height: max-content;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: center;
+    background-attachment: initial;
+    background-color: rgba(#000000,48);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5vh;
+  }
+  .container-masinfo-titulo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.45;
+    z-index: 1;
+  }
+  
+  .div-lower {
+      color: var(--color-secundario);
+    font-family: Lato;
+    font-weight: 350;
+    font-size: 3vh;
+    line-height: 62px;
+    display: flex;
+    text-align: center;
+    padding-top: 15vh ;
+    padding-bottom: 1vh;
+    justify-content: center;
+    align-items: center;
+   /* background-color: antiquewhite;*/
+  }
+
+  .div-higger {
+    color: var(--color-secundario);
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 625;
+    font-size: 6vh;
+    text-align: center;
+    padding-bottom: 15vh;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: antiquewhite;*/
+  }
+
+  .div-btn-bienve{
+    /*background-color: aliceblue;*/
+   /* padding-bottom: 15vh;
+    margin-left: 40%;*/
+    /*margin-right: 20%;*/
+    margin: 0.1rem;
+    display: flex;
+    min-width: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-bienve-empez{ 
+    padding: 1.75rem 5rem;
+    font-weight: 700;
+}
+
+.btn-bienve-empez:hover{box-shadow: 0px 0px 30px; }
+  
+@media(max-width: 429x){
+  .titulo{
+    padding: 2rem;
+  }
+}

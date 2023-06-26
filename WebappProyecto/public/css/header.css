@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+  --color-principal:#47525E;
+  --color-principal-rev:#262f36;
+  --color-secundario:white;
+  --color-secundario-rev:rgb(228, 228, 228);
+  --color-terciario:#d0372f;
+  --color-terciario-claro:#2256f1b7;
+  --color-terciario-oscuro:#0d2366;
+  --color-opcional-1:#e6af2e;
+  --color-opcional-2:#17bebb;
+
+
+  font-family: "Lato",sans-serif;
+  background-color: var(--color-secundario-rev);
+  min-height: 100vh; 
+  transition: all 0.3s ease;
+}
+
+/* MARGEN SUPERIOR PARA LA SECTION ---> cuerpo_principal*/
+.cuerpo-principal{
+  margin-top: 5rem;
+}
+*{
+    font-family: 'Lato', sans-serif;
+}
+.nav-logo{ margin-right: 3rem; margin-left: 2rem;}
+.nav-logo img{ width: auto; height: 4rem;  transition: all 0.3s;}
+.nav-logo img:hover{ transform: scale(1.025); transition: all 0.3s;}
+.nav-logo{ cursor: pointer;}
+
+.shadow-light{
+  box-shadow: 0 4px 8px -2px var(--color-principal);
+}
+.shadow-dark{
+  box-shadow: 0 4px 8px -2px var(--color-secundario);
+}
+.dropdown-menu{
+  min-width: 0;
+}
+/*Barra*/
+.bg-dark{
+  background-color: var(--color-secundario)!important;
+  transition: all 0.3s ease;
+}
+
+.bg-dark-dark{
+  background-color: var(--color-principal-rev)!important;
+  transition: all 0.3s ease;
+}
+.bx-menu{
+  color: var(--color-principal);
+}
+/*TEXTO NAVBAR NO ACTIVO LIGHT*/
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--color-principal);
+}
+/*TEXTO NAVBAR NO ACTIVO DARK*/
+.navbar-dark .navbar-nav .nav-link.dark {
+  color: var(--color-secundario-rev);
+}
+/*HOVER TEXTO NAVBAR NO ACTIVO LIGHT*/
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--color-principal);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+/*TEXTO NAVBAR NO ACTIVO DARK*/
+.navbar-dark .navbar-nav .nav-link.dark:hover {
+  color: var(--color-secundario-rev);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+/*TEXTO NAVBAR ACTIVO LIGHT*/
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color: var(--color-terciario);
+}
+/* TEXTO NAVBAR ACTIVO LIGHT/DARK*/
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color: var(--color-terciario);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+/* HOVER TEXTO NAVBAR ACTIVO LIGHT/DARK*/
+.navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover {
+  color: var(--color-terciario);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.nav-item li{
+  justify-content: center;
+  align-items: center;
+}
+/*Margen Incio-Registro*/
+.d-flex .botones {
+  gap: 0.9rem;
+  
+}
+/* BOTON NAVBAR LIGHT*/
+.btn-primary {
+  background-color: var(--color-secundario-rev);
+  border: 3px solid var(--color-secundario-rev);
+  color: var(--color-principal);
+}
+/* BOTON NAVBAR DARK*/
+.btn-primary.dark{
+  background-color: var(--color-principal);
+  border-color: var(--color-secundario-rev);
+  color: var(--color-secundario-rev);
+}
+/* HOVER,FOCUS Y ACTIVO BOTON NAVBAR LIGHT */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
+}
+/* BOTON NAVBAR DARK*/
+.btn-primary.dark {
+  background-color: var(--color-principal);
+  border: 3px solid var(--color-principal-rev);
+  color: var(--color-secundario);
+}
+/* HOVER,FOCUS,ACTIVE BOTON NAVBAR LIGHT*/
+.btn-primary.dark:hover,
+.btn-primary.dark:focus,
+.btn-primary.dark:active {
+  background-color: var(--color-principal-rev);
+  border: 3px solid var(--color-principal);
+  
+}
+
+/*
+
+ CSS PARA EL SWTICH DE MODOS OSCURO/CLARO
+ 
+ */
+
+.div-btn-switch.active  .div-btn-icon{
+    background-color: var(--color-principal-rev);
+    left: calc(100% - 1.7rem - 0.3rem);
+    color: var(--color-secundario);
+  }
+  .div-btn-switch  .div-btn-icon{
+    background-color: #e6af2e;
+    color: var(--color-secundario);
+  }
+
+  .div-btn-switch.active {
+    background-color: var(--color-principal);
+  }
+  
+  .div-btn-switch{
+    background-color: var(--color-secundario-rev);
+  }
+
+  .div-btn-switch{
+    position: relative;
+    height: 2.2rem;
+    width: 4rem;
+    min-width: 4rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin: 1rem;
+  }
+  
+  .div-btn-icon{
+    position: absolute;
+    top: 50%;
+    left: 0.3rem;
+    transform: translateY(-50%);
+    height: 1.7rem;
+    width: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(#000000,0.1);
+    transition: all 0.4s ease;
+  }
+
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    width: 100%;
+    padding-right: var(--bs-gutter-x,1.75rem);;
+  }
+
+  /*
+    CSS PARA EL BOTON DE SUBIR VIVIENDAS
+  */
+  .div-btn-altavivienda{
+    margin: 1rem;
+  }
+
+  /* DROPDOWN MENU DEL USUARIO */
+  .dropdown-menu-right {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .dropdown-item{
+    color: var(--color-principal-rev);
+  }
+  .dropdown-item.logout{
+    color: var(--color-terciario);
+  }
+  .dropdown-menu.dark .dropdown-item.logout {
+    color: var(--color-terciario);
+    
+  }
+
+  .dropdown-menu.dark .dropdown-item.logout:hover {
+    background-color: var(--color-principal-rev);
+  }
+
+  .dropdown-menu.dark{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+  }
+  
+  .dropdown-menu.dark .dropdown-item{
+    color: var(--color-secundario);
+  }
+  .dropdown-menu.dark .dropdown-item:not(.logout){
+    color: var(--color-secundario);
+  }
+  .dropdown-menu.dark .dropdown-item:hover:not(.logout) {
+    background-color: var(--color-principal-rev);
+  }
+

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+.feature-text p {
+    color: var(--color-principal);
+}
+:root{
+    --color-principal:#47525E;
+    --color-principal-rev:#262f36;
+    --color-secundario:white;
+    --color-secundario-rev:rgb(228, 228, 228);
+    --color-terciario:#d0372f;
+    --color-terciario-claro:#2256f1b7;
+    --color-terciario-oscuro:#0d2366;
+    --color-opcional-1:#d48d08;
+    --color-opcional-2:#17bebb;
+  
+  
+    font-family: "Lato",sans-serif;
+    background-color: var(--color-secundario-rev);
+    min-height: 100vh; 
+    transition: all 0.3s ease;
+  }
+  .swal2-confirm .swal2-styled {
+    background-color: #d48d08 !important;
+}
+.swal2-styled.swal2-confirm {
+    background-color: #d48d08 !important;
+  }
+/* SECTION PROPIEDADES ----------------------------------------------------------------------------------------------*/
+.spad {
+    padding-top: 2rem;
+    padding-bottom: 100px;
+    background-color: var(--color-secundario);
+    transition: all 0.3s ease;
+}
+.spad.dark{
+    background-color: var(--color-principal);
+    transition: all 0.3s ease;
+}
+.feature-section .spad{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*PARTE DEL CONTENEDOR PROPIEDADES -------------------------------------------------------------------------------------*/ 
+.feature-section {
+    justify-content: flex-start;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.propiedades{
+    border-radius: 50px;
+    width: 33.3%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+h5{
+    font-weight: 600;
+}
+
+/* IMG ------------------*/
+.feature-pic {
+    height: 250px;
+   
+}
+.set-bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    object-fit: cover;
+}
+/* PARTE DE VENTA O ALQUILER EN IMG ----------------------------------------------------------------------------------------------*/
+.feature-pic .sale-notic, .feature-pic .rent-notic {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.sale-notic, .rent-notic {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #e94646;
+    padding: 7px 13px;
+    display: inline-block;
+    border-radius: 2px;
+    position: relative;
+    z-index: 3;
+    border-radius: 0.5rem;
+}
+/* PARTE DEL TEXTO -------------------------------------------------------------------------------------*/
+.feature-text {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+/* TITULO------------------------------------------------------------------------------------------- */
+.feature-title {
+    padding-top: 20px;
+}
+/* PARTE CARACTERISTICAS PROPIEDAD -------------------------------------------------------------------*/
+.room-info-warp {
+    padding: 25px;
+    padding-bottom: 0;
+}
+.room-info{
+    border-top: 1px solid #ebebeb;
+    padding-top: 15px;
+    overflow: hidden;
+}
+.room-info p i {
+    color: var(--color-principal-rev);
+    margin-right: 10px;
+    font-weight: 700;
+}
+.feature-title p i{
+    font-weight: 800;
+}
+.room-info .rf-left{
+    float: left;
+}
+.room-info .rf-right {
+    
+    float: right;
+}
+/* ELEMENTO COMPLETO CARD ----------------------------------------------------------------------------------*/
+.feature-item {
+    margin-bottom: 50px;
+    background-color: var(--color-secundario);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 25px 0 var(--color-principal);
+}
+/* PRECIOS DE VENTA Y ALQUILER ---------------------------------------------------------------------------------*/
+.room-prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #fff;
+    text-align: center;
+    padding: 13px 50px;
+    background: var(--color-opcional-1);
+    color: #fff;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    overflow: hidden;
+}
+/* PRECIOS DE VENTA Y ALQUILER --------------------------------------------------------------------------------------*/
+.room-prices .room-price,
+.room-prices .room-price-rent {
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    position: relative;
+    display: inline-block;
+}
+
+.room-prices .room-price:hover ,.room-prices .room-price-rent:hover{
+    color: var(--color-opcional-1);
+    
+}
+.btn3 {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border: thin solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2px;
+}
+
+.btn3:hover {
+    background-color: #ffffff;
+}
+
+.price-text,
+.action-text {
+    display: inline-block;
+    text-align: center;
+    transition: opacity 0.3s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.action-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn3:hover .price-text {
+    opacity: 0;
+}
+
+.btn3:hover .action-text {
+    opacity: 1;
+}
+/* PUNTOS DE VISTA ----------------------------------------------------------------------------------------*/
+@media (min-width: 768px){
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+@media (min-width: 992px){
+.col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
+.col, .col-12, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-12, .col-md-4, .col-md-6, .col-md-7, .col-sm-6, .col-xl-4, .col-xl-6, .col-xl-8 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media(max-width: 643px){
+    .room-prices{
+        display: block;
+    }
+}
+@media(max-width: 1195px){
+    .room-prices{
+        display: block;
+    }
+}
+@media(max-width: 1600px){
+    .room-prices{
+        display: block;
+    }
+}

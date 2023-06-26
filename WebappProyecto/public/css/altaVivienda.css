@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+/* SCROLL BAR ------------------------------------------------------------------------------------------------------*/
+*::-webkit-scrollbar {
+    width: 12px;
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #D8E2E4;
+  }
+  /*
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  */
+  *::-webkit-scrollbar-track:active {
+    background-color: #D8E2E4;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 11px;
+    background-color: #47525E;
+    border: 4px outset #47525E;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #47525E;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #47525E;
+  }
+
+   /* ANIMACIONES .------------------------------------------------------------------------------------------------------*/
+
+   .animate-from-bottom {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .35s ease-in-out;
+  }
+  .animate-from-bottom-2{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .55s ease-in-out;
+  }
+
+  .show{
+    opacity :1 ;
+    transform :translateY(0px); 
+  } 
+
+
+  :root{
+    --color-principal:#47525E;
+    --color-principal-rev:#262f36;
+    --color-secundario:white;
+    --color-secundario-rev:rgb(228, 228, 228);
+    --color-terciario:#d0372f;
+    --color-terciario-claro:#2256f1b7;
+    --color-terciario-oscuro:#0d2366;
+    --color-opcional-1:#d48d08;
+    --color-opcional-2:#17bebb;
+  
+  
+    font-family: "Lato",sans-serif;
+    background-color: var(--color-secundario-rev);
+    min-height: 100vh; 
+    transition: all 0.3s ease;
+  }
+  
+  body.dark{
+    font-family: "Lato",sans-serif;
+    background-color: var(--color-principal);
+    transition: all 0.3s ease;
+  }
+
+  .cuerpo-principal {
+    margin-top: 5rem;
+    display: flex;
+}
+
+  /*  SECTION VIVIENDA TITULO -------------------------------------------------------------------------------------------------------*/
+
+  .container-altavivienda-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background-image: url(../img/castillos-de-jaen-hornos-segura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    z-index: 0;
+    position: relative;
+  }
+  .container-altavivienda-titulo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.45;
+    z-index: 1;
+  }
+  .section-altavivienda-titulo{
+    position: relative;
+    height: 30vh;
+    padding: 0;
+    align-items: center;
+  }
+  .titulo-inicial{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+    color: var(--color-secundario);
+  }
+  .text-titulo{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: var(--color-secundario);
+  }
+  .altavivienda-titulo{
+    position: relative;
+    padding-top: 4rem ;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+  }
+  .altavivienda-titulos p {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .feature-text p {
+    color: var(--color-principal);
+  }
+/* Reglas de media query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .titulo-inicial {
+      font-size: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    
+    .text-titulo {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Reglas de media query para dispositivos aún más pequeños */
+  @media (max-width: 480px) {
+    .titulo-inicial {
+      font-size: 1.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .text-titulo {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  /* SECTION ALTAVIVIENDA SECTION -------------------------------------------------------------------------------------------*/
+
+  .altavivienda-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-vivienda-section{
+    display: table-cell;
+    padding: 5rem;
+    padding-top: 5rem;
+    background-color: transparent;
+    width: 90%;
+  }
+
+  form {
+    width: 100%;
+    display: table-cell;
+}
+.select2 {
+  border: 1px solid var(--color-principal-rev);
+  background-color: transparent;
+  border-radius: 5px;
+  color: var(--color-principal-rev);
+  font-size: 16px;
+  padding: 3px;
+  transition: all 0.3s ease;
+}
+.select2.dark{
+color: var(--color-secundario);
+border: 1px solid var(--color-secundario);
+background-color: var(--color-principal);
+transition: all 0.3s ease;
+}
+.input2 {
+  align-items: end;
+  background: transparent;
+  border: 1px solid var(--color-principal-rev);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.input2.dark{
+  border: 1px solid var(--color-secundario);
+  color: var(--color-secundario);
+  transition: all 0.3s ease;
+}
+.input-container {
+    display: inline-grid;
+    
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    border: 0.25px solid var(--color-principal);
+    border-radius: 5px;
+    margin: .25rem;
+    color: var(--color-principal-rev);
+    transition: all 0.3s ease;
+}
+.input-container.dark {
+  border: 0.25px solid var(--color-secundario);
+  color: var(--color-secundario);
+  transition: all 0.3s ease;
+}
+.boton{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+
+/* Reglas de media query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .form-vivienda-section {
+      padding: 3rem;
+      width: 95%;
+    }
+  
+    .input-container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.5rem;
+      margin: 0.5rem;
+    }
+  
+    .boton {
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+    form {
+        width: 100%;
+        display: grid;
+    }
+  }
+  /* Reglas de media query para dispositivos aún más pequeños */
+@media (max-width: 480px) {
+    .form-vivienda-section {
+      padding: 1.5rem;
+      width: 100%;
+    }
+  
+    .input-container {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      padding-top: 0.25rem;
+      margin: 0.5rem;
+    }
+  
+    .boton {
+      margin: 0.25rem;
+      padding: 0.25rem;
+    }
+    form {
+        width: 100%;
+        display: grid;
+    }
+  }
+
+
+  .btn-primary2 {
+    background-color: var(--color-secundario-rev);
+    border: 2px solid ;
+    border-color: var(--color-secundario-rev);
+    color: var(--color-principal-rev);
+}
+.btn-primary2:hover {
+  background-color: var(--color-principal-rev);
+  border-color: var(--color-principal);
+  color: var(--color-secundario);
+}
+  .btn-primary2.dark {
+    background-color: var(--color-secundario-rev);
+    border-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+.btn-primary2.dark:hover {
+  background-color: var(--color-principal);
+  border-color: var(--color-secundario);
+  color: var(--color-secundario);
+}

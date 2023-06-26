@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+body {
+  --color-principal:#47525E;
+  --color-principal-rev:#262f36;
+  --color-secundario:white;
+  --color-secundario-rev:rgb(228, 228, 228);
+  --color-terciario:#d0372f;
+  --color-terciario-claro:#2256f1b7;
+  --color-terciario-oscuro:#0d2366;
+  --color-opcional-1:#d48d08;
+  --color-opcional-2:#17bebb;
+
+
+  font-family: "Lato",sans-serif;
+  background-color: var(--color-secundario-rev);
+  min-height: 100vh; 
+  transition: all 0.3s ease;
+}
+
+.body.dark{
+
+  font-family: "Lato",sans-serif;
+  background-color: var(--color-principal);
+  transition: all 0.3s ease;
+}
+/* register CARD MODO OSCURO */
+main.dark{
+  background-color: var(--color-principal-rev);
+  transition: all 0.3s ease;
+}
+#card_body.dark{
+  background-color: var(--color-principal);
+  transition: all 0.3s ease;
+}
+#register_card_description.dark{
+  color: var(--color-secundario);
+  transition: all 0.3s ease;
+}
+#register.dark{
+  background-color: var(--color-principal-rev);
+  transition: all 0.3s ease;
+}
+#register_card_footer_text.dark{
+  color: var(--color-secundario);
+  transition: all 0.3s ease;
+}
+#mastarde.dark{
+  color: var(--color-secundario);
+  transition: all 0.3s ease;
+}
+
+.brand-wrapper {
+  transition: all 0.3s ease;
+  margin-bottom: 19px; }
+  .brand-wrapper .logo {
+    height: 5em; }
+
+.msg.dark{
+  color: var(--color-secundario);
+}
+
+/* register CARD MODO LIGHT*/
+
+
+.register-card {
+  transition: all 0.3s ease;
+  border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden; }
+  .register-card-img {
+    transition: all 0.3s ease;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .register-card .card-body {
+    transition: all 0.3s ease;
+    padding: 85px 130px 20px; 
+    background-color: var(--color-secundario);}
+    @media (max-width: 422px) {
+      .register-card .card-body {
+        padding: 35px 24px; } }
+  .register-card-description {
+    transition: all 0.3s ease;
+    font-size: 25px;
+    color: var(--color-principal);
+    font-weight: 600;
+    margin-bottom: 23px; }
+  .register-card form {
+    transition: all 0.3s ease;
+    max-width: 326px; }
+  .register-card .form-control {
+    transition: all 0.3s ease;
+    border: 1px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    background-color: transparent;
+    line-height: 15;
+    font-weight: normal; }
+
+    .register-card .form-control.dark {
+    color: var(--color-secundario);
+    }
+    .register-card .form-control::-webkit-input-placeholder {
+      color: #919aa3; }
+    .register-card .form-control::-moz-placeholder {
+      color: #919aa3; }
+    .register-card .form-control:-ms-input-placeholder {
+      color: #919aa3; }
+    .register-card .form-control::-ms-input-placeholder {
+      color: #919aa3; }
+    .register-card .form-control::placeholder {
+      color: #919aa3; }
+  .register-card .register-btn {
+    transition: all 0.3s ease;
+    padding: 13px 20px 12px;
+    background-color: var(--color-principal);
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: var(--color-secundario);
+    margin-bottom: 24px; }
+    .register-card .register-btn:hover {
+      border: 1px solid var(--color-principal);
+      background-color: transparent;
+      color: var(--color-principal); }
+  .register-card .forgot-password-link {
+    transition: all 0.3s ease;
+    font-size: 14px;
+    color: #919aa3;
+    margin-bottom: 12px; }
+  .register-card-footer-text {
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: var(--color-terciario);
+    margin-bottom: 10px; }
+    @media (max-width: 767px) {
+      .register-card-footer-text {
+        margin-bottom: 24px; } }
+  .register-card-footer-nav a {
+    font-size: 14px;
+    color: var(--color-terciario); }
+
+
+
+
+/* SWITCH DE MODO revURO - MODO CLARO  */ 
+
+.div-btn-switch.active  .div-btn-icon{
+  background-color: var(--color-secundario-rev);
+  left: calc(100% - 1.7rem - 0.3rem);
+  color: var(--color-principal);
+}
+
+.div-btn-switch.active{
+  background: var(--color-secundario);
+}
+
+
+.div-btn-switch{
+  position: relative;
+  height: 2.2rem;
+  width: 4rem;
+  min-width: 4rem;
+  border-radius: 4rem;
+  background: var(--color-principal);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin: 1rem;
+}
+
+.div-btn-icon{
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  transform: translateY(-50%);
+  height: 1.7rem;
+  width: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-principal-rev);
+  color: var(--color-secundario);
+  font-size: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(#000000,0.1);
+  transition: all 0.4s ease;
+}

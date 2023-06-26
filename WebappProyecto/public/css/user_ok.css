@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+    :root{
+    --color-principal:#47525E;
+    --color-principal-rev:#262f36;
+    --color-secundario:white;
+    --color-secundario-rev:rgb(228, 228, 228);
+    --color-terciario:#d0372f;
+    --color-terciario-claro:#2256f1b7;
+    --color-terciario-oscuro:#0d2366;
+    --color-opcional-1:#d48d08;
+    --color-opcional-2:#17bebb;
+  
+  
+    font-family: "Lato",sans-serif;
+    background-color: var(--color-secundario-rev);
+    min-height: 100vh; 
+    transition: all 0.3s ease;
+  }
+    .lista_admin{
+        padding: 2rem;
+        background: var(--color-secundario);
+        transition: all 0.3s ease;
+    }
+    .lista_admin.dark{
+        background:var(--color-principal);
+        transition: all 0.3s ease;
+    }
+    .alert{
+        margin:0;
+    }
+    h1{
+        margin:1rem;
+        font-weight:700;
+        color:var(--color-principal-rev);
+        transition: all 0.3s ease;
+    }
+    h1.dark{
+        color:var(--color-secundario-rev);
+        transition: all 0.3s ease;
+    }
+    p {
+            font-size: 16px;
+            color:var(--color-principal);
+            transition: all 0.3s ease;
+        }
+    p.dark{
+        color:var(--color-secundario);
+        transition: all 0.3s ease;
+    }
+        .container2 {
+            max-width: 50rem;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    .normal{
+        color: var(--color-principal);
+        transition: all 0.3s ease;
+    }
+    .normal.dark{
+        color: var(--color-secundario);
+        transition: all 0.3s ease;
+    }
