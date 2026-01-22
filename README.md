@@ -795,11 +795,11 @@ database.default.hostname = IP_PUBLICA_CLOUDSQL
   <tr>
     <td align="center">
       <strong>Juan Antonio Acosta Molina</strong><br>
-      Desarrollo Backend & Database
+      Desarrollo Frontend & Database
     </td>
     <td align="center">
       <strong>Rubén Prieto García</strong><br>
-      Desarrollo Full-Stack & DevOps
+      Desarrollo Backend & DevOps
     </td>
   </tr>
 </table>
